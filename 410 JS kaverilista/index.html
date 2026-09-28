@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaverilista</title>
+</head>
+
+<body>
+
+    <h1>Kaverilista</h1>
+
+    <script>
+        let kaverit = [];
+
+        for (let i = 0; i < 10; i++) {
+            let nimi = prompt("Anna kaverin nimi " + (i + 1) + ":");
+
+            kaverit.push(nimi);
+        }
+
+        document.write("<h2>Kaverisi ovat:</h2>");
+
+        for (let i = 0; i < kaverit.length; i++) {
+            document.write((i + 1) + ". " + kaverit[i] + "<br>");
+        }
+    </script>
+
+</body>
+</html>
